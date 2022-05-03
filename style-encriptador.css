@@ -140,6 +140,7 @@ h3{
 
 .textooutput{
 	width: calc(28vw - 64px);
+	height: 60vh;
 	font-size: 24px;
 	line-height: 36px;
 	color: #0A3871;
@@ -148,8 +149,8 @@ h3{
 	border: none;
 }
 
-.textooutput:active{
-	border: none;
+.textooutput:focus{
+	outline: none;
 }
 
 .botoncopiar{
