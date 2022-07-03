@@ -1,0 +1,14 @@
+.contenido__output__texto{
+	background: transparent;
+	border: none;
+	color: #0A3871;
+	font-size: 24px;
+	height: 75%;
+	line-height: 36px;
+	resize: none;
+	width: 100%;
+}
+
+.contenido__output__texto:focus{
+	outline: none;
+}

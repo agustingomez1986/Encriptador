@@ -1,0 +1,9 @@
+.contenido__input__condiciones{
+	display: inline-block;
+	color: #495057;
+	font-size: 12px;
+	line-height: 16px;
+    margin-left: 5px;
+	opacity: 0.8;
+    vertical-align: top;
+}

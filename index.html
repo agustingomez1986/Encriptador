@@ -5,172 +5,99 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<title>Encriptador</title>
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style-encriptador.css">
+		<link rel="stylesheet" href="assets/css/reset.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-input/contenido-box/contenido-boxBotones/contenido-botones.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-input/contenido-box/contenido-boxBotones.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-input/contenido-box/contenido-condiciones.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-input/contenido-box.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-input/contenido-textarea.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-output/contenido-conTexto/contenido-botonCopiar.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-output/contenido-conTexto/contenido-texto.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-output/contenido-conTexto.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-output/contenido-sinTexto/contenido-aviso.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-output/contenido-munieco.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-output/contenido-sinTexto.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-input.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container/contenido-output.css">
+		<link rel="stylesheet" href="assets/css/contenido/contenido-container.css">
+
+		<link rel="stylesheet" href="assets/css/encabezado/encabezado-container/encabezado-link.css">
+		<link rel="stylesheet" href="assets/css/encabezado/encabezado-container/encabezado-logo.css">
+		<link rel="stylesheet" href="assets/css/encabezado/encabezado-container/encabezado-titulo.css">
+		<link rel="stylesheet" href="assets/css/encabezado/encabezado-container.css">
+
+		<link rel="stylesheet" href="assets/css/rodapie/rodapie-titulo.css">
+		<link rel="stylesheet" href="assets/css/rodapie/rodapie-redes.css">
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
-		<header>
-			<a href="https://www.aluracursos.com"> <img src="imagenes/letraalura.png" alt="Símbolo Alura" class="letraalura"></a>
+		<header class="encabezado">
+			<div class="encabezado__container">
+				<a class="encabezado__link" href="https://www.aluracursos.com">
+					<img src="assets/imagenes/letraalura.png" alt="Símbolo Alura" class="encabezado__logo">
+				</a>
+				<h1 class="encabezado__titulo">Encriptador de texto</h1>
+			</div>
+			
 		</header>
 
-		<main>
-			<section class="cajainput">
-				<textarea id="textoinput" class="textoinput" placeholder="Ingrese el texto aquí" autofocus></textarea>			
-
-				<div class="cajamedia">
-					<img src="imagenes/exclamacion.png" class="iconoexclamacion"><h4>Solo letras minúsculas y sin acentos</h4>
-			
-					<div class="botones">
-						<button class="botonencriptar" onclick="botonencriptar()">Encriptar</button>	
-						<button class="botondesencriptar" onclick="botondesencriptar()">Desencriptar</button>
+		<main class="contenido">
+			<div class="contenido__container">
+				<section class="contenido__input">
+					<textarea id="textoinput" class="contenido__input__textarea" placeholder="Ingrese el texto aquí" autofocus></textarea>			
+	
+					<div class="contenido__input__box">
+						<img src="assets/imagenes/exclamacion.png" class="contenido__input__icono"><h4 class="contenido__input__condiciones">Solo letras minúsculas y sin acentos</h4>
+				
+						<div class="contenido__input__boxBotones">
+							<button class="contenido__input__botones contenido__input__botones--encriptar" onclick="botonencriptar()">Encriptar</button>	
+							<button class="contenido__input__botones contenido__input__botones--desencriptar" onclick="botondesencriptar()">Desencriptar</button>
+						</div>
 					</div>
-				</div>
-			</section>
-
-			<section class="cajaoutput">
-				<div class="cajasintexto" id="cajasintexto">
-					<img src="imagenes/munieco.png" class="munieco" alt="Imagen munieco">
-					<h2>Ningún mensaje fue encontrado</h2>
-					<h3>Ingresa el texto que deseas encriptar o desencriptar</h3>
-				</div>
-
-				<div class="cajacontexto" id="cajacontexto">
-					<textarea id="textooutput" class="textooutput" readonly></textarea>
-					<button class="botoncopiar" id="botoncopiar" onclick="botoncopiar()">Copiar</button>
-				</div>
-			</section>
+				</section>
+	
+				<section class="contenido__output">
+					<div class="contenido__output__sinTexto" id="cajasintexto">
+						<img src="assets/imagenes/munieco.png" class="contenido__output__munieco" alt="Imagen munieco">
+						<h2 class="contenido__output__aviso">Ningún mensaje fue encontrado</h2>
+						<h3 class="contenido__output__mensaje">Ingresa el texto que deseas encriptar o desencriptar</h3>
+					</div>
+	
+					<div class="contenido__output__conTexto" id="cajacontexto">
+						<textarea class="contenido__output__texto" id="textooutput" readonly></textarea>
+						<button class="contenido__output__botonCopiar" id="botoncopiar" onclick="botoncopiar()">Copiar</button>
+					</div>
+				</section>
+			</div>
+			
 		</main>
 
 		<footer>
 			<div class="rodapie">
-				Creado por Agustín Gomez <a href="https://www.linkedin.com/in/agustingomez1986"><img src="imagenes/linkedin.png" alt="Icono Linkedin" height="15"></a> <a href="https://app.aluracursos.com/user/agustingomez1986"><img src="imagenes/letraalura.png" alt="Símbolo Alura" height="15"></a>
+				<h5 class="rodapie__titulo">Desarrollado por Agustín Gomez</h5>
+				<a class="rodapie__redes" href="https://www.linkedin.com/in/agustingomez1986">
+					<img class="rodapie__icono" src="assets/imagenes/linkedin.png" alt="Icono Linkedin"></a>
+				<a class="rodapie__redes" href="https://app.aluracursos.com/user/agustingomez1986">
+					<img class="rodapie__icono" src="assets/imagenes/letraalura.png" alt="Símbolo Alura"></a>
+				<a class="rodapie__redes" href="https://github.com/agustingomez1986/">
+                    <img class="rodapie__icono" src="assets/imagenes/github.png" alt="Icono Github">
+                </a>
 			</div>
 		</footer>
 	</body>
 
-	<script>
-
-		//	CUANDO CLICKEO EN EL BOTON "Encriptar" Y "Desencriptar", LO QUE VOY A HACER PRIMERO ES VALIDAR EL CÓDIGO Y LUEGO HACER EL PROCESO DE ENCRIPTADO O DESENCRIPTADO
-
-		function botonencriptar(){
-			var validacion = validar(textoinput.value);
-			
-			// SI PASA LA VALIDACIÓN, ENTONCES ENCRIPTO
-			if(validacion){
-				textooutput.value = encriptar(textoinput.value);
-				document.getElementById("cajasintexto").style.display = "none";
-				document.getElementById("cajacontexto").style.display = "block";
-			} else {
-				alert("SOLO SE ACEPTAN MINÚSCULAS Y SIN ACENTOS");
-				document.getElementById("cajasintexto").style.display = "block";
-				document.getElementById("cajacontexto").style.display = "none";
-				textoinput.focus();
-			}
-		}
-
-		function validar(texto){
-			var validacion = true
-			const patron = /[^a-z\n\s]/;  // ESTE SERÁ MI RANGO ¡OPUESTO! CONTRA EL QUE COMPARARÉ MI ENTRADA DE TEXTO (textarea)
-			
-			for(var i = 0; i < texto.length ; i++){
-				if (patron.test(texto.charAt(i))){		// SI EN ALGÚN MOMENTO EL CARACTER COINCIDE CON EL RANGO OPUESTO, ENTONCES SERÁ INVALIDADO EL TEXTO
-					validacion = false;
-					break;
-				} 
-			}
-			return validacion;
-		}
-
-		// PROCESO DE ENCRIPTADO
-		function encriptar(texto){
-			var textonuevo;
-			textonuevo = texto.replaceAll('e','enter');
-			textonuevo = textonuevo.replaceAll('i','imes');
-			textonuevo = textonuevo.replaceAll('a','ai');
-			textonuevo = textonuevo.replaceAll('o','ober');
-			textonuevo = textonuevo.replaceAll('u','ufat');
-			return textonuevo;
-
-			//	ASÍ HABÍA HECHO LA PRIMERA VEZ EL ENCRIPTADO, HASTA QUE CONOCÍ LA FUNCIÓN .replaceAll()
-			//	ME PARECIÓ INTERESANTE DEJAR EL CÓDIGO
-
-			/*	var textonuevo = "";
-			var letraactual;
-			var letraencriptada;
-
-			for(var i = 0; i < texto.length ; i++){
-				switch(texto.charAt(i)){
-					case "a":
-						letraencriptada = texto.charAt(i).replace("a","ai");
-						textonuevo = textonuevo.concat(letraencriptada);
-						break;
-					case "e":
-						letraencriptada = texto.charAt(i).replace("e","enter");
-						textonuevo = textonuevo.concat(letraencriptada);
-						break;
-					case "i":
-						letraencriptada = texto.charAt(i).replace("i","imes");
-						textonuevo = textonuevo.concat(letraencriptada);
-						break;
-					case "o":
-						letraencriptada = texto.charAt(i).replace("o","ober");
-						textonuevo = textonuevo.concat(letraencriptada);
-						break;
-					case "u":
-						letraencriptada = texto.charAt(i).replace("u","ufat");
-						textonuevo = textonuevo.concat(letraencriptada);
-						break;
-					default:
-						letraencriptada = texto.charAt(i);
-						textonuevo = textonuevo.concat(letraencriptada);
-						break;
-				}
-			}
-			*/
-		}
-
-		function botondesencriptar(){
-			var validacion = validar(textoinput.value);
-			
-			// SI PASA LA VALIDACIÓN, ENTONCES DESENCRIPTO
-			if(validacion){
-				textooutput.value = desencriptar(textoinput.value);
-				document.getElementById("cajasintexto").style.display = "none";
-				document.getElementById("cajacontexto").style.display = "block";
-			} else {
-				alert("SOLO SE ACEPTAN MINÚSCULAS Y SIN ACENTOS");
-				document.getElementById("cajasintexto").style.display = "block";
-				document.getElementById("cajacontexto").style.display = "none";
-				textoinput.focus();
-			}
-		}
-
-		// PROCESO DE DESENCRIPTADO
-		function desencriptar(texto){
-			var textonuevo;
-			textonuevo = texto.replaceAll('enter','e');
-			textonuevo = textonuevo.replaceAll('imes','i');
-			textonuevo = textonuevo.replaceAll('ai','a');
-			textonuevo = textonuevo.replaceAll('ober','o');
-			textonuevo = textonuevo.replaceAll('ufat','u');
-			return textonuevo;
-		}
-
-		function botoncopiar(){
-			var textoCopiar = document.getElementById("textooutput");
-
-			textoCopiar.select();
-			document.execCommand('copy');
-
-			// CON ESTOS DOS COMANDOS ES LA UNICA MANERA QUE ENCONTRÉ PARA QUE NO SE SELECCIONE EL TEXTAREA "textooutput" CUANDO HAGO CLICK EN EL BOTON COPIAR
-			textoCopiar.blur();
-			window.getSelection().removeAllRanges();
-		}
-	</script>
+	<script src="assets/js/boton-copiar.js"></script>
+	<script src="assets/js/boton-desencriptar.js"></script>
+	<script src="assets/js/boton-encriptar.js"></script>
+	<script src="assets/js/desencriptar.js"></script>
+	<script src="assets/js/encriptar.js"></script>
+	<script src="assets/js/validar.js"></script>
 </html>
 
 

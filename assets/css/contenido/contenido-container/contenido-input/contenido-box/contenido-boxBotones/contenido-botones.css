@@ -1,0 +1,31 @@
+.contenido__input__botones{
+    border: none;
+    border-radius: 24px;
+	font-size: 16px;
+	font-weight: normal;
+	height: 67px;
+	transition: 0.1s;
+	width: 49%;
+}
+
+.contenido__input__botones--encriptar{
+	background-color: #0A3871;
+	color: #D8EFD8;
+}
+
+.contenido__input__botones--desencriptar{
+	background-color: #D8EFD8;
+	border: 1px solid #0A3871;
+	color: #0A3871;
+}
+
+.contenido__input__botones--encriptar:active{
+	background-color: #D8EFD8;
+	border: 1px solid #0A3871;
+	color: #0A3871;
+}
+
+.contenido__input__botones--desencriptar:active{
+	background-color: #0A3871;
+	color: #D8EFD8;
+}

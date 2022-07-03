@@ -1,0 +1,15 @@
+.contenido__input__textarea{
+    background: transparent;
+    border: none;
+    color: #0A3871;
+    font-size: 32px;
+    height: 70%;
+	line-height: 48px;
+    margin-top: 8vh;
+	resize: none;
+    width: 100%;
+}
+
+.contenido__input__textarea:focus{
+	outline: none;
+}

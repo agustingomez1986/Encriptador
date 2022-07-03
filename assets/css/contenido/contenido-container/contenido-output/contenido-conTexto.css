@@ -1,0 +1,9 @@
+.contenido__output__conTexto{
+	align-items: center;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+	height: 100%;
+    position: relative;
+	width: 100%;
+}
