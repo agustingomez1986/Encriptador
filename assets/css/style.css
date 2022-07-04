@@ -9,20 +9,44 @@ body{
 
 ::placeholder{
 	color: #0A3871;
-	font-size: 32px;
+	font-size: 24px;
 }
 
 .encabezado{
-	height: 10vh;
+	
 }
 
 .contenido{
-	height: 75vh;
+	
 }
 
 .rodapie{
 	align-items: center;
-	height: 15vh;
 	display: flex;
 	justify-content: center;
+	margin: 2rem 0;
+}
+
+@media (min-width: 768px){
+	::placeholder{
+		font-size: 32px;
+	}	
+}
+
+@media (min-width: 768px){
+	.encabezado{
+		height: 10vh;
+	}
+	
+	.contenido{
+		height: 75vh;
+	}
+	
+	.rodapie{
+		align-items: center;
+		height: 15vh;
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
 }

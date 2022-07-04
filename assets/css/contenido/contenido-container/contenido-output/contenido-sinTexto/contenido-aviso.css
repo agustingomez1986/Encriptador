@@ -4,7 +4,6 @@
 	color: #343A40;
 	text-align: center;
 	line-height: 28.8px;
-	margin-top: 3vh;
 	margin-bottom: 1.5vh;
 }
 
@@ -13,4 +12,10 @@
     font-size: 16px;
     line-height: 24px;
 	text-align: center;
+}
+
+@media (min-width: 768px){
+	.contenido__output__aviso{
+		margin-top: 3vh;
+	}
 }

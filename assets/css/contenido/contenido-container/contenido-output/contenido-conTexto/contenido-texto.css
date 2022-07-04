@@ -3,7 +3,7 @@
 	border: none;
 	color: #0A3871;
 	font-size: 24px;
-	height: 75%;
+	height: 300px;
 	line-height: 36px;
 	resize: none;
 	width: 100%;
@@ -11,4 +11,10 @@
 
 .contenido__output__texto:focus{
 	outline: none;
+}
+
+@media (min-width: 768px){
+	.contenido__output__texto{
+		height: 75%;
+	}
 }

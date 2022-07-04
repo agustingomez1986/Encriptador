@@ -1,3 +1,10 @@
 .contenido__output__munieco{
-	max-width: 100%;
+	display: none;
+}
+
+@media (min-width: 768px){
+	.contenido__output__munieco{
+		display: block;
+		max-width: 100%;
+	}
 }

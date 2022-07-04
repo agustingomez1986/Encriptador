@@ -1,8 +1,15 @@
 .contenido__output{
 	background-color: white;
 	border-radius: 32px;
-	height: 100%;
-	margin-left: 32px;
 	padding: 16px;
-	width: calc(40% - 64px);
+	width: 100%;
+}
+
+@media (min-width: 768px){
+	.contenido__output{
+		height: 100%;
+		margin-left: 32px;
+		max-height: auto;
+		width: calc(40% - 64px);
+	}
 }

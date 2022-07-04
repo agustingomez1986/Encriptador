@@ -1,7 +1,20 @@
 .contenido__container{
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
-    margin-left: 15vw;
-    width: calc(100vw - 15vw);
+    margin-top: 2rem;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .contenido__container{
+        flex-direction: row;
+        justify-content: left;
+        margin-left: 15vw;
+        margin-top: 0;
+        padding: 0;
+        width: calc(100vw - 15vw);
+    }
 }

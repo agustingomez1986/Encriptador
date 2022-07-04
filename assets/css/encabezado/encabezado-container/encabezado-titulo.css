@@ -1,5 +1,11 @@
 .encabezado__titulo{
     color: #0A3871;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
+}
+
+@media (min-width: 425px){
+	.encabezado__titulo{
+        font-size: 40px;
+    }
 }
